@@ -1,0 +1,25 @@
+.encabezadoContenido {
+  background-image: url(../img/original/tienda.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
+
+.productos img {
+  width: 150px;
+  height: auto;
+}
+section {
+  width: 100%;
+}
+section article {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.franjaProductos {
+  background-color: rgb(202, 233, 255, 0.5);
+}

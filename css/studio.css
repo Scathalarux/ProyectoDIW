@@ -1,0 +1,13 @@
+img {
+  width: 150px;
+  height: auto;
+}
+.encabezadoContenido {
+  background-image: url(../img/original/taller2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+}
