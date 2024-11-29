@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #5fa8d3;
+  --light-color: #cae9ff;
+  --secondary-color: #aed6f1;
+}
 img {
   width: 150px;
   height: auto;

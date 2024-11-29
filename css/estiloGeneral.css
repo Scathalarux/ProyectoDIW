@@ -116,6 +116,7 @@ header .cesta {
   width: 15%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 header nav ul a:hover {
@@ -421,6 +422,9 @@ footer .aspectosLegales ul {
   header i {
     font-size: 1em;
   }
+  /* header .cesta{
+    width: 20%;
+  } */
 
   header nav ul {
     display: block;
