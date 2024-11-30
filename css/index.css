@@ -5,179 +5,201 @@
 }
 
 /* DISPOSITIVOS MÓVILES */
-main .encabezadoContenido {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+main {
+  .encabezadoContenido {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
-main .encabezadoContenido .imagen {
-  background-image: url(../img/original/tienda.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  width: 100%;
-  height: 30em;
-}
+    .imagen {
+      background-image: url(../img/original/tienda.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      overflow: hidden;
+      width: 100%;
+      height: 25em;
 
-main .encabezadoContenido .imagen button {
-  background-image: linear-gradient(var(--secondary-color) 5%,
-      var(--primary-color));
-  position: relative;
-  bottom: -65%;
-  padding: 1.25em;
-  border-radius: 1em;
-  border: none;
-  box-shadow: 1px 1px 5px 1px gray;
-  font-weight: bold;
-  font-size: 1.5em;
-  color: white;
-  cursor: pointer;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}
+      button {
+        background-image: linear-gradient(var(--secondary-color) 5%,
+            var(--primary-color));
+        position: relative;
+        bottom: -65%;
+        padding: 1.25em;
+        border-radius: 1em;
+        border: none;
+        box-shadow: 1px 1px 5px 1px gray;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: white;
+        cursor: pointer;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+      }
 
-main .encabezadoContenido h2 {
-  color: var(--primary-color);
-  padding: 20px;
-  font-style: italic;
-  font-size: 1.25em;
-  line-height: 1.5em;
-}
+      button:hover {
+        transform: scale(1.1);
+      }
+    }
 
-main .productos {
-  background-color: rgb(202, 233, 255, 0.5);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 5% 10%;
-  gap: 50px 0;
-}
+    h2 {
+      color: var(--primary-color);
+      padding: 25px;
+      font-style: italic;
+      font-size: 1.25em;
+      line-height: 1.5em;
+      margin: 25px 0;
+    }
+  }
 
-main .productos article {
-  width: 75%;
-  max-width: 380px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-main .productos img {
-  width: 85%;
-  height: auto;
-  border-radius: 15px;
-}
-
-main .productos div {
-  width: 70%;
-  margin: auto;
-}
-
-main .productos article:nth-child(5),
-main .productos article:nth-child(6) {
-  display: none;
-}
-
-main .talleresCursos {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 50px 0;
-  gap: 30px 0;
-}
-
-main .talleresCursos h2 {
-  color: var(--primary-color);
-  padding: 0 20px;
-  font-size: 1.25em;
-  text-align: left;
-  width: 100%;
-}
-
-main .talleresCursos img {
-  width: 90%;
-  border-radius: 20px;
-}
-
-main .talleresCursos p {
-  padding: 5px 20px;
-}
-
-main .talleresCursos button {
-  background-image: linear-gradient(var(--secondary-color) 5%,
-      var(--primary-color));
-  border: none;
-  padding: 1em;
-  border-radius: 1em;
-  /* border: 2px solid var(--light-color); */
-  box-shadow: 1px 1px 5px 1px lightgray;
-  font-size: 1.25em;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}
-
-@media screen and (min-width: 361px) {
-  main .talleresCursos {
+  .productos {
+    background-color: rgb(202, 233, 255, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 10%;
+    gap: 50px 0;
+
+    article {
+      width: 75%;
+      max-width: 380px;
+      margin-top: 20px;
+      text-align: center;
+
+      a {
+        display: block;
+        width: 85%;
+        margin: auto;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 15px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        img:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      div {
+        width: 85%;
+        margin: 10px auto auto;
+      }
+    }
+
+    article:nth-child(5),
+    article:nth-child(6) {
+      display: none;
+    }
   }
 
-  main .talleresCursos article {
-    width: 85%;
-    margin: auto;
-    position: relative;
-    margin-bottom: 30px;
+  .talleresCursos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0;
+    gap: 30px 0;
+
+    h2 {
+      color: var(--primary-color);
+      padding: 0 20px;
+      font-size: 1.25em;
+      text-align: left;
+      width: 100%;
+    }
+
+    article {
+      img {
+        width: 90%;
+        border-radius: 20px;
+      }
+
+      div {
+        padding: 5px 20px;
+      }
+
+      .imagenTalleresCursos {
+        pointer-events: none;
+      }
+
+      a {
+        button {
+          margin: 15px 0;
+          background-image: linear-gradient(var(--secondary-color) 5%,
+              var(--primary-color));
+          border: none;
+          padding: 1em;
+          border-radius: 1em;
+          box-shadow: 1px 1px 5px 1px lightgray;
+          font-size: 1.25em;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+          transition: all 0.3s ease-in-out;
+
+          button:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
   }
 
-  main .talleresCursos article div {
-    margin: 15px 0;
-  }
-}
+  @media screen and (min-width: 951px) {
+    main {
+      .productos article {
+        min-width: 33%;
+      }
 
-@media screen and (min-width: 950px) {
-  main .productos article {
-    max-width: 33%;
-  }
+      .productos article:nth-child(5),
+      .productos article:nth-child(6) {
+        display: block;
+      }
 
-  main .productos img {
-    width: 65%;
-    margin-bottom: 10px;
-  }
+      .talleresCursos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
 
-  main .productos article:nth-child(5),
-  main .productos article:nth-child(6) {
-    display: block;
-  }
+        article {
+          position: relative;
+          width: 55%;
 
-  main .talleresCursos {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+          .btnTalleresCursos {
+            display: none;
+          }
 
-  main .talleresCursos article {
-    width: 40%;
-  }
+          .imagenTalleresCursos {
+            pointer-events: auto;
+            transition: all 0.3s ease-in-out;
+          }
 
-  main .talleresCursos article * button {
-    margin-top: 50px;
-  }
+          .imagenTalleresCursos:hover {
+            transform: scale(1.1);
+          }
 
-  main .talleresCursos article div {
-    position: absolute;
-    bottom: 15%;
-    right: -2%;
-    background-color: var(--light-color);
-    padding: 35px;
-    border-radius: 35px;
-    width: 65%;
-    max-width: 350px;
-    max-height: 160px;
-    text-align: left;
-    box-shadow: 1px 2px 3px 4px rgba(0,0,0,0.15);
+          div {
+            position: absolute;
+            bottom: 15%;
+            right: -2%;
+            background-color: var(--light-color);
+            padding: 35px;
+            border-radius: 35px;
+            width: 65%;
+            max-width: 350px;
+            min-width: 250px;
+            max-height: 160px;
+            text-align: left;
+            box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+    }
   }
 }
