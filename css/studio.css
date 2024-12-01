@@ -245,7 +245,7 @@ main {
         }
 
         #completarReserva:hover {
-          box-shadow: inset 20em 0 0 0 var(--light-color);
+          box-shadow: inset 50em 0 0 0 var(--light-color);
           color: var(--primary-color);
           text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
 
