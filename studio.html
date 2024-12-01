@@ -160,37 +160,60 @@
         <!-- Fin descripción taller -->
         <!-- Reserva del taller -->
         <div class="reservaTaller">
-            <h1>Reserva</h1>
+            <h2>Reserva</h2>
             <form action="#" method="post">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre">
+                <div class="identificacion">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email">
 
-                <label for="personas">Número de personas</label>
-                <input type="number" name="personas" max="10" min="1">
+                <div class="identificacion">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="nombre@reserva.com">
+                </div>
 
-                <label for="telf">Teléfono</label>
-                <input type="tel" name="telf">
 
-                <label for="fecha">Fecha del taller</label>
-                <input type="datetime-local" name="fecha">
+                <div class="datosTaller">
+                    <label for="personas">Personas</label>
+                    <input type="number" name="personas" max="10" min="1" placeholder="2">
+                </div>
 
-                <select name="tipoTaller">
-                    <option value="-">Tipo de taller</option>
-                    <option value="tazaCuenco">Taza o Cuenco</option>
-                    <option value="platoFuente">Plato o Fuente</option>
-                    <option value="torno">Iniciación al torno</option>
-                </select>
 
-                <label for="comentarios">Dudas o comentarios</label>
-                <textarea name="comentarios" rows="4" cols="6" placeholder="Escribe aquí..."></textarea>
+                <div class="datosTaller">
+                    <label for="telf">Teléfono</label>
+                    <input type="tel" name="telf" placeholder="666777888">
+                </div>
 
-                <input type="checkbox" name="politicaPrivacidad">
-                <label for="politicaPrivacidad">Aceptar la política de privacidad</label>
+                <div class="datosTaller">
+                    <label for="tipoTaller">Taller</label>
 
-                <input type="submit" value="Reservar">
+                    <select name="tipoTaller">
+                        <option value="">-</option>
+                        <option value="tazaCuenco">Taza o Cuenco</option>
+                        <option value="platoFuente">Plato o Fuente</option>
+                        <option value="torno">Iniciación al torno</option>
+                    </select>
+                </div>
+
+                <div class="taller">
+                    <label for="fecha">Fecha del taller</label>
+                    <input type="datetime-local" name="fecha">
+                </div>
+
+                <div class="dudas">
+                    <label for="comentarios">Dudas o comentarios</label>
+                    <textarea name="comentarios" rows="4" cols="6" placeholder="Escribe aquí..."></textarea>
+                </div>
+
+
+                <div class="confirmacion">
+                    <div>
+                        <input id="politicaPrivacidad" type="checkbox" name="politicaPrivacidad">
+                        <label for="politicaPrivacidad">Aceptar la política de privacidad</label>
+                    </div>
+                    <input id="completarReserva" type="submit" value="Reservar">
+                </div>
 
             </form>
         </div>
