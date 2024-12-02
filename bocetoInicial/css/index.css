@@ -1,20 +1,10 @@
-/*
-* ******* *
-* GENERAL *
-* ******* *
-*/
 :root {
   --primary-color: #5fa8d3;
   --light-color: #cae9ff;
   --secondary-color: #aed6f1;
 }
 
-/*
-* ***************** *
-* DISPOSITIVO MÓVIL *
-* ***************** *
-*/
-
+/* DISPOSITIVOS MÓVILES */
 main {
   .encabezadoContenido {
     text-align: center;
@@ -34,11 +24,10 @@ main {
       justify-content: center;
       align-items: flex-end;
 
+
       button {
-        background-image: linear-gradient(
-          var(--secondary-color) 5%,
-          var(--primary-color)
-        );
+        background-image: linear-gradient(var(--secondary-color) 5%,
+            var(--primary-color));
         margin-bottom: 1.5em;
         padding: 0.75em 1em;
         border-radius: 15px;
@@ -157,10 +146,8 @@ main {
         .btnTalleresCursos {
           button {
             margin: 15px 0;
-            background-image: linear-gradient(
-              var(--secondary-color) 5%,
-              var(--primary-color)
-            );
+            background-image: linear-gradient(var(--secondary-color) 5%,
+                var(--primary-color));
             border: none;
             padding: 1em;
             border-radius: 15px;
@@ -180,15 +167,11 @@ main {
       }
     }
   }
+
 }
 
-/*
-* ******************* *
-* DISPOSITIVO DESKTOP *
-* ******************* *
-*/
-
 @media screen and (min-width: 951px) {
+
   .talleresCursos {
     flex-direction: row;
     flex-wrap: wrap;
@@ -213,6 +196,7 @@ main {
             width: 100%;
           }
         }
+
 
         div {
           transition: all 0.3s ease-in-out;

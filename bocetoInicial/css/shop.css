@@ -1,20 +1,10 @@
-/*
-* ******* *
-* GENERAL *
-* ******* *
-*/
 :root {
   --primary-color: #5fa8d3;
   --light-color: #cae9ff;
   --secondary-color: #aed6f1;
 }
 
-/*
-* ***************** *
-* DISPOSITIVO MÓVIL *
-* ***************** *
-*/
-
+/* DISPOSITIVOS MÓVILES */
 main {
   .encabezadoContenido {
     display: flex;
@@ -47,6 +37,7 @@ main {
     padding: 5% 10%;
     gap: 50px 0;
 
+
     article {
       width: 75%;
       max-width: 380px;
@@ -70,6 +61,7 @@ main {
         }
       }
 
+
       div {
         width: 85%;
         margin: 10px auto auto;
@@ -90,12 +82,7 @@ main {
   }
 }
 
-/*
-* ******************* *
-* DISPOSITIVO DESKTOP *
-* ******************* *
-*/
-
+/* DESKTOP */
 @media screen and (min-width: 577px) {
   main {
     .productos article {
@@ -111,4 +98,5 @@ main {
       display: block;
     }
   }
+
 }

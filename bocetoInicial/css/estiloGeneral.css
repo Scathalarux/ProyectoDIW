@@ -1,8 +1,3 @@
-/*
-* ******* *
-* FUENTES *
-* ******* *
-*/
 @font-face {
   font-family: "Adelia";
   src: url(../assets/fonts/adelia_3/adelia.ttf);
@@ -13,11 +8,6 @@
   src: url(../assets/fonts/Tiresias-Infofont/Tiresias_Infofont.ttf);
 }
 
-/*
-* ******* *
-* GENERAL *
-* ******* *
-*/
 :root {
   --primary-color: #5fa8d3;
   --light-color: #cae9ff;
@@ -34,12 +24,7 @@
   font-size: 18px;
 }
 
-/*
-* ******************* *
-* DISPOSITIVO DESKTOP *
-* ******************* *
-*/
-
+/* DESKTOP */
 header {
   display: flex;
   flex-direction: row;
@@ -108,6 +93,7 @@ header {
         height: 100%;
         transition: all 0.1s ease-in-out;
 
+
         li {
           width: 100%;
           display: block;
@@ -127,7 +113,7 @@ header {
     color: var(--primary-color);
     transition: all 0.1s ease-in-out;
   }
-  i:hover {
+  i:hover{
     transform: scale(1.2);
   }
 
@@ -150,13 +136,12 @@ aside {
   max-width: 1000px;
 
   h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     padding: 20px 0;
   }
 
   ul li {
     line-height: 2em;
-    font-size: 0.85em;
     margin: 10px 0;
   }
 
@@ -223,6 +208,7 @@ footer {
           cursor: pointer;
         }
       }
+
     }
   }
 
@@ -243,19 +229,18 @@ footer {
 
     span {
       line-height: 2em;
-      font-size: 1.15em;
+      font-size: 1.5em;
       font-style: italic;
     }
 
     ul a {
       color: black;
-
+      
+      
       li {
         list-style: none;
-        font-size: 1em;
+        font-size: 1.15em;
         padding: 10px;
-        width: 30%;
-        margin-right: auto;
       }
 
       li::before {
@@ -269,9 +254,9 @@ footer {
       }
     }
 
-    ul a:hover > li,
-    ul a:hover > li {
-      transform: scale(1.1);
+    ul a:hover>li,
+    ul a:hover>li {
+      transform: scale(1.2);
       border-bottom: 2px solid var(--light-color);
     }
   }
@@ -288,8 +273,9 @@ footer {
       font-size: 2.5em;
       color: black;
       transition: all 0.1s ease-in-out;
+
     }
-    i:hover {
+    i:hover{
       transform: scale(1.1);
     }
   }
@@ -310,14 +296,11 @@ footer {
         color: black;
       }
     }
+
   }
 }
 
-/*
-* ****************** *
-* DISPOSITIVO TABLET *
-* ****************** *
-*/
+/* TABLET */
 
 @media screen and (max-width: 950px) {
   header {
@@ -400,12 +383,7 @@ footer {
   }
 }
 
-/*
-* ***************** *
-* DISPOSITIVO MÓVIL *
-* ***************** *
-*/
-
+/* MÓVIL */
 @media screen and (max-width: 576px) {
   header {
     justify-content: space-evenly;
@@ -461,7 +439,7 @@ footer {
           border-bottom: 1px solid var(--secondary-color);
         }
 
-        a:hover > li {
+        a:hover>li {
           background-color: var(--primary-color);
           color: white;
         }
@@ -469,13 +447,14 @@ footer {
       .checkBtn {
         margin: auto;
         display: block;
-        cursor: pointer;
+        cursor:pointer;
       }
 
-      #checkMenu:checked ~ ul {
+      #checkMenu:checked~ul {
         display: block;
         left: 0;
       }
+
     }
 
     i {
@@ -532,5 +511,6 @@ footer {
         width: 100%;
       }
     }
+
   }
 }
