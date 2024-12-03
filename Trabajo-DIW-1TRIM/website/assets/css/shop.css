@@ -3,6 +3,7 @@
   --light-color: #cae9ff;
   --secondary-color: #aed6f1;
 }
+
 /*
 * ******************* *
 * DISPOSITIVO DESKTOP *
@@ -39,6 +40,26 @@ main {
     align-items: center;
     padding: 5% 10%;
     gap: 50px 0;
+
+
+    .descripcion {
+      text-align: center;
+
+      h3 {
+        color: var(--primary-color);
+        padding: 10px 25px;
+        font-size: 1em;
+        line-height: 1.15em;
+        margin-bottom: 25px;
+
+        a{
+          font-style: italic;
+          font-weight: bold;
+          color: var(--primary-color);
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
 
     article {
       width: 75%;
@@ -81,6 +102,7 @@ main {
       font-size: 1.25em;
       text-align: left;
     }
+
     article {
       min-width: 50%;
     }
@@ -94,6 +116,7 @@ main {
 */
 @media screen and (max-width: 576px) {
   main {
+
     .productos article:nth-child(5),
     .productos article:nth-child(6) {
       display: none;

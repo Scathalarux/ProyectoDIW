@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eavu</title>
-    <link rel="shortcut icon" href="./img/logo2.png" type="image/x-icon">
+    <meta name="author" content="Lara Comesaña Varela">
+    <meta name="description"
+        content="Taller de cerámica en el que podrás encontrar productos, talleres y cursos. Donde el cuerpo y la mente se reconcilian">
+    <meta name="keywords"
+        content="cerámica, taller de cerámica, clases de cerámica, cursos de cerámica, taller, talleres, clase, clases, curso, cursos, taza, cuenco, bol, jarrón, plato, fuente, pintar cerámica, relajación, actividad grupal, actividad individual, reserva, pintar">
+    <title>Eavu - Talleres</title>
+    <link rel="shortcut icon" href="img/logo/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/estiloGeneral.css">
     <link rel="stylesheet" href="assets/css/studio.css">
@@ -33,21 +38,11 @@
             <input type="checkbox" id="checkMenu">
             <label for="checkMenu" class="checkBtn"><i class="fa-solid fa-ellipsis-vertical"></i></label>
             <ul>
-                <a href="index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="studio.html">
-                    <li>Talleres</li>
-                </a>
-                <a href="index.html">
-                    <li>Cursos</li>
-                </a>
-                <a href="shop.html">
-                    <li>Tienda</li>
-                </a>
-                <a href="index.html">
-                    <li>Sobre mí</li>
-                </a>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="studio.html">Talleres</a></li>
+                <li><a href="index.html">Cursos</a></li>
+                <li><a href="shop.html">Tienda</a></li>
+                <li><a href="index.html">Sobre mí</a></li>
             </ul>
         </nav>
         <!-- Fin navegación -->
@@ -163,32 +158,32 @@
             <h2>Reserva</h2>
             <form action="#" method="post">
                 <div class="identificacion">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Nombre">
+                    <label for="nombreReserva">Nombre</label>
+                    <input type="text" id="nombreReserva" name="nombreReserva" placeholder="Nombre">
                 </div>
 
 
                 <div class="identificacion">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="nombre@reserva.com">
+                    <label for="emailReserva">Email</label>
+                    <input type="email" id="emailReserva" name="emailReserva" placeholder="nombre@reserva.com">
                 </div>
 
 
                 <div class="datosTaller">
-                    <label for="personas">Personas</label>
-                    <input type="number" name="personas" max="10" min="1" placeholder="2">
+                    <label for="personasReserva">Personas</label>
+                    <input type="number" id="personasReserva" name="personasReserva" max="10" min="1" placeholder="2">
                 </div>
 
 
                 <div class="datosTaller">
-                    <label for="telf">Teléfono</label>
-                    <input type="tel" name="telf" placeholder="666777888">
+                    <label for="telfReserva">Teléfono</label>
+                    <input type="tel" name="telfReserva" id="telfReserva" placeholder="666777888">
                 </div>
 
                 <div class="datosTaller">
                     <label for="tipoTaller">Taller</label>
 
-                    <select name="tipoTaller">
+                    <select name="tipoTaller" id="tipoTaller">
                         <option value="">-</option>
                         <option value="tazaCuenco">Taza o Cuenco</option>
                         <option value="platoFuente">Plato o Fuente</option>
@@ -197,13 +192,14 @@
                 </div>
 
                 <div class="taller">
-                    <label for="fecha">Fecha del taller</label>
-                    <input type="datetime-local" name="fecha">
+                    <label for="fechaReserva">Fecha del taller</label>
+                    <input type="datetime-local" id="fechaReserva" name="fechaReserva">
                 </div>
 
                 <div class="dudas">
-                    <label for="comentarios">Dudas o comentarios</label>
-                    <textarea name="comentarios" rows="4" cols="6" placeholder="Escribe aquí..."></textarea>
+                    <label for="comentariosReserva">Dudas o comentarios</label>
+                    <textarea name="comentariosReserva" id="comentariosReserva" rows="4" cols="6"
+                        placeholder="Escribe aquí..."></textarea>
                 </div>
 
 
@@ -227,9 +223,9 @@
         <!-- Newsletter -->
         <div class="newsletter">
             <form action="#" method="post">
-                <label for="email" class="titulo">Newsletter</label>
+                <label for="emailNewsletter" class="titulo">Newsletter</label>
                 <div>
-                    <input type="email" name="email" id="emailNewsletter" placeholder="email@newsletter.com">
+                    <input type="email" name="emailNewsletter" id="emailNewsletter" placeholder="email@newsletter.com">
                     <input type="submit" id="botonSuscripcion" value="→">
                 </div>
             </form>
@@ -239,18 +235,10 @@
         <nav class="navFooter">
             <span class="titulo">Eavu</span>
             <ul>
-                <a href="#">
-                    <li>Inicio</li>
-                </a>
-                <a href="#">
-                    <li>Talleres</li>
-                </a>
-                <a href="#">
-                    <li>Cursos</li>
-                </a>
-                <a href="#">
-                    <li>Tienda</li>
-                </a>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Talleres</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li> <a href="#">Tienda</a></li>
             </ul>
         </nav>
         <!-- Fin navegación -->
@@ -258,15 +246,9 @@
         <div class="info">
             <span class="titulo">Info</span>
             <ul>
-                <a href="#">
-                    <li>Contacto</li>
-                </a>
-                <a href="#">
-                    <li>Taller</li>
-                </a>
-                <a href="#">
-                    <li>Sobre mí</li>
-                </a>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Taller</a></li>
+                <li><a href="#">Sobre mí</a></li>
             </ul>
         </div>
         <!-- Fin info empresa -->

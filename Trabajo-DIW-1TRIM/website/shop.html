@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eavu</title>
-    <link rel="shortcut icon" href="./img/logo2.png" type="image/x-icon">
+    <meta name="author" content="Lara Comesaña Varela">
+    <meta name="description"
+        content="Taller de cerámica en el que podrás encontrar productos, talleres y cursos. Donde el cuerpo y la mente se reconcilian">
+    <meta name="keywords"
+        content="cerámica, taller de cerámica, clases de cerámica, cursos de cerámica, taller, talleres, clase, clases, curso, cursos, taza, cuenco, bol, jarrón, plato, fuente, pintar cerámica, relajación, actividad grupal, actividad individual, reserva, pintar">
+    <title>Eavu - Tienda</title>
+    <link rel="shortcut icon" href="img/logo/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/estiloGeneral.css">
     <link rel="stylesheet" href="assets/css/shop.css">
@@ -14,50 +19,40 @@
 </head>
 
 <body>
-    <!-- Cabecera -->
-    <header>
-        <!-- Zona identificación -->
-        <div class="identificacion">
-            <a href="index.html">
-                <img src="img/logo/logo2.svg"
-                    alt="Logo Eavu: una mano manipulando cerámica sobre una cabeza a modo de torno">
-            </a>
-            <div>
-                <h1>Eavu</h1>
-                <h2>El Arte de Volver a Unir</h2>
-            </div>
+   <!-- Cabecera -->
+   <header>
+    <!-- Zona identificación -->
+    <div class="identificacion">
+        <a href="index.html">
+            <img src="img/logo/logo2.svg"
+                alt="Logo Eavu: una mano manipulando cerámica sobre una cabeza a modo de torno">
+        </a>
+        <div>
+            <h1>Eavu</h1>
+            <h2>El Arte de Volver a Unir</h2>
         </div>
-        <!-- Fin zona identificación  -->
-        <!-- Navegación -->
-        <nav>
-            <input type="checkbox" id="checkMenu">
-            <label for="checkMenu" class="checkBtn"><i class="fa-solid fa-ellipsis-vertical"></i></label>
-            <ul>
-                <a href="index.html">
-                    <li>Inicio</li>
-                </a>
-                <a href="studio.html">
-                    <li>Talleres</li>
-                </a>
-                <a href="index.html">
-                    <li>Cursos</li>
-                </a>
-                <a href="shop.html">
-                    <li>Tienda</li>
-                </a>
-                <a href="index.html">
-                    <li>Sobre mí</li>
-                </a>
-            </ul>
-        </nav>
-        <!-- Fin navegación -->
-        <!-- Zona interacción -->
-        <div class="cesta">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <!-- Fin zona interacción  -->
-    </header>
-    <!-- Fin cabecera -->
+    </div>
+    <!-- Fin zona identificación  -->
+    <!-- Navegación -->
+    <nav>
+        <input type="checkbox" id="checkMenu">
+        <label for="checkMenu" class="checkBtn"><i class="fa-solid fa-ellipsis-vertical"></i></label>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="studio.html">Talleres</a></li>
+            <li><a href="index.html">Cursos</a></li>
+            <li><a href="shop.html">Tienda</a></li>
+            <li><a href="index.html">Sobre mí</a></li>
+        </ul>
+    </nav>
+    <!-- Fin navegación -->
+    <!-- Zona interacción -->
+    <div class="cesta">
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <!-- Fin zona interacción  -->
+</header>
+<!-- Fin cabecera -->
 
     <!-- Contenido -->
     <main>
@@ -99,10 +94,11 @@
         <!-- Fin productos más vendidos -->
         <!-- Productos -->
         <section class="productos">
+            <div class="descripcion"><h3>Todos nuestros productos han sido elaborados artesanalmente en nuestro taller. Ahora tú también puedes crear tus propios elementos en nuestros <a href="studio.html">Talleres</a> y <a href="#">Cursos</a></h3></div>
             <!-- Producto 1 -->
             <article>
                 <a href="#"><img src="img/products/producto1.jpg" alt="taza blanca estilo mármol con plato"></a>
-                <div>
+                <div>S
                     <p>Taza de té mármol - 20€</p>
                 </div>
             </article>
@@ -162,9 +158,9 @@
         <!-- Newsletter -->
         <div class="newsletter">
             <form action="#" method="post">
-                <label for="email" class="titulo">Newsletter</label>
+                <label for="emailNewsletter" class="titulo">Newsletter</label>
                 <div>
-                    <input type="email" name="email" id="emailNewsletter" placeholder="email@newsletter.com">
+                    <input type="email" name="emailNewsletter" id="emailNewsletter" placeholder="email@newsletter.com">
                     <input type="submit" id="botonSuscripcion" value="→">
                 </div>
             </form>
@@ -174,18 +170,10 @@
         <nav class="navFooter">
             <span class="titulo">Eavu</span>
             <ul>
-                <a href="#">
-                    <li>Inicio</li>
-                </a>
-                <a href="#">
-                    <li>Talleres</li>
-                </a>
-                <a href="#">
-                    <li>Cursos</li>
-                </a>
-                <a href="#">
-                    <li>Tienda</li>
-                </a>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Talleres</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li> <a href="#">Tienda</a></li>
             </ul>
         </nav>
         <!-- Fin navegación -->
@@ -193,15 +181,9 @@
         <div class="info">
             <span class="titulo">Info</span>
             <ul>
-                <a href="#">
-                    <li>Contacto</li>
-                </a>
-                <a href="#">
-                    <li>Taller</li>
-                </a>
-                <a href="#">
-                    <li>Sobre mí</li>
-                </a>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Taller</a></li>
+                <li><a href="#">Sobre mí</a></li>
             </ul>
         </div>
         <!-- Fin info empresa -->
