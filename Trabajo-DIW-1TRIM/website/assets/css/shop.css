@@ -3,8 +3,11 @@
   --light-color: #cae9ff;
   --secondary-color: #aed6f1;
 }
-
-/* DISPOSITIVOS MÓVILES */
+/*
+* ******************* *
+* DISPOSITIVO DESKTOP *
+* ******************* *
+*/
 main {
   .encabezadoContenido {
     display: flex;
@@ -37,10 +40,10 @@ main {
     padding: 5% 10%;
     gap: 50px 0;
 
-
     article {
       width: 75%;
       max-width: 380px;
+      min-width: 33%;
       margin-top: 20px;
       text-align: center;
 
@@ -61,7 +64,6 @@ main {
         }
       }
 
-
       div {
         width: 85%;
         margin: 10px auto auto;
@@ -79,24 +81,22 @@ main {
       font-size: 1.25em;
       text-align: left;
     }
+    article {
+      min-width: 50%;
+    }
   }
 }
 
-/* DESKTOP */
-@media screen and (min-width: 577px) {
+/*
+* ***************** *
+* DISPOSITIVO MÓVIL *
+* ***************** *
+*/
+@media screen and (max-width: 576px) {
   main {
-    .productos article {
-      min-width: 33%;
-    }
-
-    .productos .productosMasVendidos article {
-      min-width: 50%;
-    }
-
     .productos article:nth-child(5),
     .productos article:nth-child(6) {
-      display: block;
+      display: none;
     }
   }
-
 }
