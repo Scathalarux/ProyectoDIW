@@ -28,7 +28,7 @@ main {
       padding: 1.15em;
       border-radius: 5px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-      background-color: #ffffffa4;
+      background-color: hsla(0, 0%, 100%, 0.643);
       margin-bottom: 1.5em;
     }
   }
