@@ -1,0 +1,526 @@
+@font-face {
+  font-family: "Adelia";
+  src: url(../fonts/adelia_3/adelia.ttf);
+}
+
+@font-face {
+  font-family: "Tiresias Infofont";
+  src: url(../fonts/Tiresias-Infofont/Tiresias_Infofont.ttf);
+}
+
+:root {
+  --primary-color: #5fa8d3;
+  --light-color: #cae9ff;
+  --secondary-color: #aed6f1;
+}
+
+* {
+  font-family: "Tiresias", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+/*
+* ******************* *
+* DISPOSITIVO DESKTOP *
+* ******************* *
+*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 16em;
+
+  .identificacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    order: 1;
+
+    img,
+    div {
+      width: 75%;
+    }
+
+    a {
+      width: 15%;
+    }
+
+    h1,
+    h2 {
+      font-family: "Adelia", sans-serif;
+      color: var(--primary-color);
+      font-size: 1.5em;
+    }
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    text-align: center;
+
+    #checkMenu,
+    .checkBtn {
+      display: none;
+    }
+
+    .checkBtn {
+      cursor: pointer;
+    }
+
+    ul {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+
+      li {
+        width: 20%;
+        transition: all 0.1s ease-in-out;
+
+        a {
+          font-size: 1em;
+          font-weight: bold;
+          color: var(--primary-color);
+          width: 100%;
+        }
+      }
+      li:hover > a {
+        font-size: 1.15em;
+      }
+    }
+  }
+
+  i {
+    font-size: 1.5em;
+    margin: 0 5px;
+    color: var(--primary-color);
+    transition: all 0.1s ease-in-out;
+  }
+
+  i:hover {
+    transform: scale(1.2);
+  }
+
+  .cesta {
+    text-align: center;
+    order: 2;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+aside {
+  background-color: var(--light-color);
+  padding: 40px;
+  border-radius: 40px;
+  width: 90%;
+  margin: 15px auto;
+  max-width: 1000px;
+
+  h2 {
+    font-size: 1.05em;
+    padding: 20px 0;
+  }
+
+  ul li {
+    line-height: 2em;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+
+  ul li::before {
+    background-image: url(../../img/icon/eventos.svg);
+    background-size: cover;
+    content: "";
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+footer {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+
+  .newsletter {
+    width: 25%;
+    order: 3;
+
+    form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 45px 20px 0 20px;
+      gap: 20px 50px;
+      align-items: center;
+      text-align: center;
+
+      .titulo {
+        font-size: 1.25em;
+        font-style: italic;
+        width: 100%;
+      }
+
+      div {
+        width: 100%;
+
+        #emailNewsletter {
+          width: 80%;
+          padding: 15px 10px;
+          border-radius: 25px;
+          border: 2px solid var(--primary-color);
+        }
+
+        #botonSuscripcion {
+          padding: 15px 25px;
+          border-radius: 25px;
+          background-color: var(--light-color);
+          border: 2px solid var(--primary-color);
+          transition: all 0.3s ease-in-out;
+        }
+
+        #botonSuscripcion:hover {
+          transform: scale(1.2);
+          background-color: var(--primary-color);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .navFooter {
+    order: 1;
+  }
+
+  .info {
+    order: 2;
+  }
+
+  .navFooter,
+  .info {
+    padding: 1em 4em;
+    width: 30%;
+    height: 15em;
+    border-right: 1px solid var(--light-color);
+
+    span {
+      line-height: 2em;
+      font-size: 1.5em;
+      font-style: italic;
+    }
+
+    ul li {
+      list-style: none;
+      padding: 10px;
+
+      a {
+        color: black;
+        font-size: 1.15em;
+      }
+    }
+
+    li::before {
+      background-image: url(../../img/icon/eventos.svg);
+      background-size: cover;
+      content: "";
+      height: 10px;
+      width: 10px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    ul li:hover > a,
+    ul li:hover > a {
+      transform: scale(1.2);
+      border-bottom: 2px solid var(--light-color);
+    }
+  }
+
+  .redesSociales {
+    order: 4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+
+    i {
+      margin: 0 0.45em 0.75em;
+      font-size: 2.5em;
+      color: black;
+      transition: all 0.1s ease-in-out;
+    }
+
+    i:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .aspectosLegales {
+    order: 5;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 2em 3em;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      li a {
+        color: black;
+      }
+    }
+  }
+}
+
+/*
+* ****************** *
+* DISPOSITIVO TABLET *
+* ****************** *
+*/
+
+@media screen and (max-width: 950px) {
+  header {
+    .identificacion {
+      h1 {
+        font-size: 1.25em;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    i {
+      font-size: 1.15em;
+    }
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 20px 0;
+
+    .newsletter {
+      width: 100%;
+      order: 1;
+      max-width: 700px;
+
+      form {
+        justify-content: stretch;
+        flex-wrap: wrap;
+        gap: 20px 0;
+
+        .titulo {
+          font-size: 1em;
+        }
+
+        div {
+          #emailNewsletter {
+            font-size: 16px;
+            width: 77%;
+          }
+
+          #botonSuscripcion {
+            width: 20%;
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+    .navFooter {
+      order: 2;
+    }
+
+    .info {
+      order: 3;
+    }
+
+    .navFooter,
+    .info {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: auto;
+      border: none;
+
+      span {
+        line-height: 1.5em;
+        font-size: 1.15em;
+      }
+
+      ul a li {
+        list-style: none;
+        font-size: 1em;
+        padding: 10px;
+        width: 100%;
+        max-width: 150px;
+      }
+    }
+  }
+}
+
+/*
+* ***************** *
+* DISPOSITIVO MÓVIL *
+* ***************** *
+*/
+@media screen and (max-width: 576px) {
+  header {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    height: 8em;
+
+    .identificacion {
+      width: 80%;
+
+      img {
+        width: 100%;
+      }
+
+      h1,
+      h2 {
+        font-size: 1em;
+      }
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      order: 4;
+      width: 15%;
+
+      ul {
+        display: block;
+        z-index: 10;
+        width: 100%;
+        height: 15em;
+        position: absolute;
+        top: 8em;
+        left: -100%;
+        background-color: rgba(255, 255, 255, 0.85);
+        transition: all 0.5s;
+        border: 1px solid var(--light-color);
+
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          width: 100%;
+          height: 20%;
+          text-align: center;
+          line-height: 1em;
+
+          a {
+            padding: 1.15em 0;
+          }
+        }
+
+        li:not(a:last-of-type) {
+          border-bottom: 1px solid var(--secondary-color);
+        }
+
+        li:hover {
+          background-color: var(--primary-color);
+          transform: none;
+        }
+
+        li:hover > a {
+          font-size: 1em;
+          color: white;
+        }
+      }
+
+      .checkBtn {
+        margin: auto;
+        display: block;
+        cursor: pointer;
+      }
+
+      #checkMenu:checked ~ ul {
+        display: block;
+        left: 0;
+      }
+    }
+
+    i {
+      font-size: 1em;
+    }
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 15px 0;
+
+    .newsletter {
+      width: 100%;
+      order: 1;
+
+      form {
+        justify-content: stretch;
+        flex-wrap: wrap;
+        gap: 20px 0;
+
+        .titulo {
+          font-size: 1em;
+        }
+
+        div {
+          #emailNewsletter {
+            font-size: 16px;
+            width: 77%;
+          }
+
+          #botonSuscripcion {
+            width: 20%;
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+    .navFooter,
+    .info {
+      width: 100%;
+      height: auto;
+      margin: 0;
+
+      span {
+        line-height: 1.5em;
+        font-size: 1.15em;
+      }
+
+      ul a li {
+        /* list-style: none; */
+        font-size: 1em;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
